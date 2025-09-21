@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <!-- Optional: You can bind the PostResponseItem here if using DataBinding -->
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Post Title"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Body -->
+        <TextView
+            android:id="@+id/textBody"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Post body content goes here..."
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:maxLines="4"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@id/textTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="4dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
